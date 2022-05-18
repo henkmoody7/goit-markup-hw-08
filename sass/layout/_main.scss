@@ -1,0 +1,33 @@
+.hero {
+  //   max-width: 1600px;
+  //   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //     url(../images/page-one/bg-image.jpg);
+  margin-right: auto;
+  margin-left: auto;
+  padding: 200px 0;
+  background-color: #2f303a;
+  text-align: center;
+}
+
+.hero__tittle {
+  margin-bottom: var(--standard-margin);
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 360px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
+}
+
+.hero__btn {
+  padding: 10px 32px;
+}

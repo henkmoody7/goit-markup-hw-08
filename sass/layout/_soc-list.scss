@@ -1,0 +1,32 @@
+.soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.soc-list__item + .soc-list__item {
+  margin-left: 10px;
+}
+
+.soc-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+
+  transition: background-color var(--standard-duration) var(--timing-function),
+    fill 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--secondary-color);
+  }
+}
+
+.soc-list__icon {
+  width: 20px;
+  height: 20px;
+}
