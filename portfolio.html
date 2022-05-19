@@ -23,9 +23,6 @@
   <body>
     <header class="header">
       <div class="container main-nav">
-        <a href="/" class="logo header__logo link"
-          >Web<span class="header__span header__span--dark logo">Studio</span></a
-        >
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item"><a href="./index.html" class="nav__link link">Студия</a></li>
@@ -54,6 +51,15 @@
           </li>
         </ul>
       </div>
+      <a href="/" class="logo header__logo link"
+        >Web<span class="header__span header__span--dark logo">Studio</span></a
+      >
+      <button type="button" class="menu-btn">
+        <svg width="40" height="40" aria-label="переключатель меню">
+          <use href="./images/icons.svg#icon-menu"></use>
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
     </header>
     <main>
       <section class="projects section">
@@ -302,9 +308,9 @@
             </li>
           </ul>
         </div>
-        <div class="footer-contact">
+        <div class="footer-elements">
           <p class="footer__tittle">присоединяйтесь</p>
-          <ul class="soc-list list">
+          <ul class="soc-list soc-list--footer list">
             <li class="soc-list__item">
               <a href="" class="soc-list__link soc-list__link--footer link">
                 <svg class="soc-list__icon">
@@ -331,11 +337,11 @@
             </li>
           </ul>
         </div>
-        <div class="footer-contact">
+        <div class="footer-elements">
           <p class="footer__tittle">Подпишитесь на рассылку</p>
           <form>
-            <input type="email" placeholder="E-mail" class="footer-contact__input" />
-            <button type="submit" class="footer-contact__btn button">
+            <input type="email" placeholder="E-mail" class="footer__input" />
+            <button type="submit" class="footer__btn button">
               Подписаться
               <svg width="24" height="24" class="button__icon">
                 <use href="./images/icons.svg#icon-icon-send"></use>

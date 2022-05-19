@@ -4,9 +4,11 @@
   //     url(../images/page-one/bg-image.jpg);
   margin-right: auto;
   margin-left: auto;
-  padding: 200px 0;
+  padding: 118px 0;
   background-color: #2f303a;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .hero__tittle {
