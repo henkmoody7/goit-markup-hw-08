@@ -21,13 +21,13 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container main-nav">
         <a href="/" class="logo header__logo link"
           >Web<span class="header__span header__span--dark logo">Studio</span></a
         >
         <button type="button" class="open-menu-btn">
-          <svg width="40" height="40" class="mob-menu__icon">
+          <svg width="40" height="40" class="open-menu-btn__icon">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
@@ -63,7 +63,7 @@
 
         <div class="mob-menu is-hidden">
           <button type="button" class="close-menu-btn">
-            <svg width="40" height="40" class="mob-menu__icon">
+            <svg width="40" height="40" class="close-menu-btn__icon">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
@@ -81,14 +81,14 @@
           <div>
             <ul class="mob-contacts-list list">
               <li class="mob-contacts-list__item">
-                <a href="mailto:info@devstudio.com" class="mob-contacts-list__link link">
-                  info@devstudio.com
-                </a>
-              </li>
-              <li class="mob-contacts-list__item">
                 <a href="tel:+380961111111" class="mob-contacts-list__link link">
                   +38 096 111 11 11</a
                 >
+              </li>
+              <li class="mob-contacts-list__item">
+                <a href="mailto:info@devstudio.com" class="mob-contacts-list__link link">
+                  info@devstudio.com
+                </a>
               </li>
             </ul>
             <ul class="social list">
@@ -126,12 +126,27 @@
             <li class="projects-item">
               <a href="" class="projects-link link">
                 <div class="projects-thumb">
-                  <img
-                    src="./images/page-two/img1.jpg"
-                    alt="профили трех людей"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/page-two/img1.jpg 1x, ./images/page-two/img1-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-two/img1-tab.jpg    1x,
+                        ./images/page-two/img1-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-two/img1-tel.jpg    1x,
+                        ./images/page-two/img1-tel-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/page-two/img1-tel.jpg" alt="профили трех людей" />
+                  </picture>
                   <div class="projects-overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -150,12 +165,27 @@
             <li class="projects-item">
               <a href="" class="projects-link link">
                 <div class="projects-thumb">
-                  <img
-                    src="./images/page-two/img2.jpg"
-                    alt="два баскетболиста"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/page-two/img2.jpg 1x, ./images/page-two/img2-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-two/img2-tab.jpg    1x,
+                        ./images/page-two/img2-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-two/img2-tel.jpg    1x,
+                        ./images/page-two/img2-tel-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/page-two/img2-tel.jpg" alt="два баскетболиста" />
+                  </picture>
                   <div class="projects-overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -173,12 +203,27 @@
             <li class="projects-item">
               <a href="" class="projects-link link">
                 <div class="projects-thumb">
-                  <img
-                    src="./images/page-two/img3.jpg"
-                    alt="лого ресторана"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/page-two/img3.jpg 1x, ./images/page-two/img3-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-two/img3-tab.jpg    1x,
+                        ./images/page-two/img3-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-two/img3-tel.jpg    1x,
+                        ./images/page-two/img3-tel-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/page-two/img3-tel.jpg" alt="лого ресторана" />
+                  </picture>
                   <div class="projects-overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -196,12 +241,27 @@
             <li class="projects-item">
               <a href="" class="projects-link link">
                 <div class="projects-thumb">
-                  <img
-                    src="./images/page-two/img4.jpg"
-                    alt="черные наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/page-two/img4.jpg 1x, ./images/page-two/img4-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-two/img4-tab.jpg    1x,
+                        ./images/page-two/img4-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-two/img4-tel.jpg    1x,
+                        ./images/page-two/img4-tel-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/page-two/img4-tel.jpg" alt="черные наушники" />
+                  </picture>
                   <div class="projects-overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -219,12 +279,27 @@
             <li class="projects-item">
               <a href="" class="projects-link link">
                 <div class="projects-thumb">
-                  <img
-                    src="./images/page-two/img5.jpg"
-                    alt="белая и персиковая коробка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/page-two/img5.jpg 1x, ./images/page-two/img5-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-two/img5-tab.jpg    1x,
+                        ./images/page-two/img5-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-two/img5-tel.jpg    1x,
+                        ./images/page-two/img5-tel-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/page-two/img5-tel.jpg" alt="белая и персиковая коробка" />
+                  </picture>
                   <div class="projects-overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -242,12 +317,27 @@
             <li class="projects-item">
               <a href="" class="projects-link link">
                 <div class="projects-thumb">
-                  <img
-                    src="./images/page-two/img6.jpg"
-                    alt="монитор apple"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/page-two/img6.jpg 1x, ./images/page-two/img6-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-two/img6-tab.jpg    1x,
+                        ./images/page-two/img6-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-two/img6-tel.jpg    1x,
+                        ./images/page-two/img6-tel-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/page-two/img6-tel.jpg" alt="монитор apple" />
+                  </picture>
                   <div class="projects-overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -265,7 +355,27 @@
             <li class="projects-item">
               <a href="" class="projects-link link">
                 <div class="projects-thumb">
-                  <img src="./images/page-two/img7.jpg" alt="журнал" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/page-two/img7.jpg 1x, ./images/page-two/img7-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-two/img7-tab.jpg    1x,
+                        ./images/page-two/img7-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-two/img7-tel.jpg    1x,
+                        ./images/page-two/img7-tel-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/page-two/img7-tel.jpg" alt="журнал" />
+                  </picture>
                   <div class="projects-overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -283,12 +393,27 @@
             <li class="projects-item">
               <a href="" class="projects-link link">
                 <div class="projects-thumb">
-                  <img
-                    src="./images/page-two/img8.jpg"
-                    alt="бирка с надписью"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/page-two/img8.jpg 1x, ./images/page-two/img8-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-two/img8-tab.jpg    1x,
+                        ./images/page-two/img8-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-two/img8-tel.jpg    1x,
+                        ./images/page-two/img8-tel-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/page-two/img8-tel.jpg" alt="бирка с надписью" />
+                  </picture>
                   <div class="projects-overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -306,12 +431,27 @@
             <li class="projects-item">
               <a href="" class="projects-link link">
                 <div class="projects-thumb">
-                  <img
-                    src="./images/page-two/img9.jpg"
-                    alt="открытый ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/page-two/img9.jpg 1x, ./images/page-two/img9-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-two/img9-tab.jpg    1x,
+                        ./images/page-two/img9-tab-2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-two/img9-tel.jpg    1x,
+                        ./images/page-two/img9-tel-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/page-two/img9-tel.jpg" alt="открытый ноутбук" />
+                  </picture>
                   <div class="projects-overlay">
                     <p class="overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и

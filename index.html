@@ -21,13 +21,13 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container main-nav">
         <a href="/" class="logo header__logo link"
           >Web<span class="header__span header__span--dark logo">Studio</span></a
         >
         <button type="button" class="open-menu-btn">
-          <svg width="40" height="40" class="mob-menu__icon">
+          <svg width="40" height="40" class="open-menu-btn__icon">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
@@ -63,7 +63,7 @@
 
         <div class="mob-menu is-hidden">
           <button type="button" class="close-menu-btn">
-            <svg width="40" height="40" class="mob-menu__icon">
+            <svg width="40" height="40" class="close-menu-btn__icon">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
@@ -81,14 +81,14 @@
           <div>
             <ul class="mob-contacts-list list">
               <li class="mob-contacts-list__item">
-                <a href="mailto:info@devstudio.com" class="mob-contacts-list__link link">
-                  info@devstudio.com
-                </a>
-              </li>
-              <li class="mob-contacts-list__item">
                 <a href="tel:+380961111111" class="mob-contacts-list__link link">
                   +38 096 111 11 11</a
                 >
+              </li>
+              <li class="mob-contacts-list__item">
+                <a href="mailto:info@devstudio.com" class="mob-contacts-list__link link">
+                  info@devstudio.com
+                </a>
               </li>
             </ul>
             <ul class="social list">
@@ -165,15 +165,30 @@
         <h2 class="work__tittle tittle">Чем мы занимаемся</h2>
         <ul class="work__list list">
           <li class="work__item">
-            <img src="./images/page-one/box1.jpg" alt="робочий процес" width="370" />
+            <img
+              srcset="./images/page-one/box1.jpg 1x, ./images/page-one/box1-2x.jpg 2x"
+              src="./images/page-one/box1.jpg"
+              alt="робочий процес"
+              width="370"
+            />
             <div class="work__text">Десктопные приложения</div>
           </li>
           <li class="work__item">
-            <img src="./images/page-one/box2.jpg" alt="робота за ноутбуком" width="370" />
+            <img
+              srcset="./images/page-one/box2.jpg 1x, ./images/page-one/box2-2x.jpg 2x"
+              src="./images/page-one/box2.jpg"
+              alt="робота за ноутбуком"
+              width="370"
+            />
             <div class="work__text">Мобильные приложения</div>
           </li>
           <li class="work__item">
-            <img src="./images//page-one/box3.jpg" alt="робота с планшетом" width="370" />
+            <img
+              srcset="./images/page-one/box3.jpg 1x, ./images/page-one/box3-2x.jpg 2x"
+              src="./images//page-one/box3.jpg"
+              alt="робота с планшетом"
+              width="370"
+            />
             <div class="work__text">Дизайнерские решения</div>
           </li>
         </ul>
@@ -185,7 +200,27 @@
         <ul class="team__list list">
           <li class="team__item">
             <div class="team__card">
-              <img src="./images/page-one/member1.jpg" alt="фото Игоря" />
+              <picture>
+                <source
+                  srcset="./images/page-one/member1.jpg 1x, ./images/page-one/member1-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/page-one/member1-tab.jpg    1x,
+                    ./images/page-one/member1-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/page-one/member1-tel.jpg    1x,
+                    ./images/page-one/member1-tel-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/page-one/member1-tel.jpg" alt="фото Игоря" />
+              </picture>
               <div class="team__content">
                 <h3 class="team__low-tittle">Игорь Демьяненко</h3>
                 <p lang="en" class="team__text">Product Designer</p>
@@ -220,7 +255,27 @@
           </li>
           <li class="team__item">
             <div class="team__card">
-              <img src="./images/page-one/member2.jpg" alt="фото Ольги" />
+              <picture>
+                <source
+                  srcset="./images/page-one/member2.jpg 1x, ./images/page-one/member2-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/page-one/member2-tab.jpg    1x,
+                    ./images/page-one/member2-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/page-one/member2-tel.jpg    1x,
+                    ./images/page-one/member2-tel-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/page-one/member2-tel.jpg" alt="фото Ольги" />
+              </picture>
               <div class="team__content">
                 <h3 class="team__low-tittle">Ольга Репина</h3>
                 <p lang="en" class="team__text">Frontend Developer</p>
@@ -255,7 +310,27 @@
           </li>
           <li class="team__item">
             <div class="team__card">
-              <img src="./images//page-one/member3.jpg" alt="фото Николая" />
+              <picture>
+                <source
+                  srcset="./images/page-one/member3.jpg 1x, ./images/page-one/member3-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/page-one/member3-tab.jpg    1x,
+                    ./images/page-one/member3-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/page-one/member3-tel.jpg    1x,
+                    ./images/page-one/member3-tel-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/page-one/member3-tel.jpg" alt="фото Николая" />
+              </picture>
               <div class="team__content">
                 <h3 class="team__low-tittle">Николай Тарасов</h3>
                 <p lang="en" class="team__text">Marketing</p>
@@ -290,7 +365,27 @@
           </li>
           <li class="team__item">
             <div class="team__card">
-              <img src="./images//page-one/member4.jpg" alt="фото Михаила" />
+              <picture>
+                <source
+                  srcset="./images/page-one/member4.jpg 1x, ./images/page-one/member4-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/page-one/member4-tab.jpg    1x,
+                    ./images/page-one/member4-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/page-one/member4-tel.jpg    1x,
+                    ./images/page-one/member4-tel-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/page-one/member4-tel.jpg" alt="фото Михаила" />
+              </picture>
               <div class="team__content">
                 <h3 class="team__low-tittle">Михаил Ермаков</h3>
                 <p lang="en" class="team__text">UI Designer</p>

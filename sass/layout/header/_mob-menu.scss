@@ -50,7 +50,8 @@
   fill: var(--accent-color);
 }
 
-.mob-menu__icon {
+.open-menu-btn__icon,
+.close-menu-btn__icon {
   transition: fill var(--standard-duration) var(--timing-function);
 }
 

@@ -2,21 +2,30 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 64px;
-  margin: -10px;
+  margin-left: -10px;
   @media screen and (min-width: 480px) {
     flex-wrap: nowrap;
-    margin: -20px;
+    margin-left: -20px;
   }
 }
 
 .social__item {
-  margin: 10px;
+  margin-left: 10px;
   @media screen and (min-width: 480px) {
-    margin: 20px;
+    margin-left: 20px;
+  }
+}
+
+.social__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  @media screen and (min-width: 480px) {
+    padding-right: 20px;
   }
 }
 
 .social__link {
+  display: block;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;

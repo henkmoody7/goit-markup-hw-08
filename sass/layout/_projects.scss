@@ -11,10 +11,10 @@
 .projects-item {
   margin: calc(var(--standard-margin) / 2);
   @media screen and (min-width: 768px) {
-    flex-basis: calc(100% / 2 - 2 * var(--standard-margin));
+    flex-basis: calc((100% - 2 * var(--standard-margin)) / 2);
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 3 - 3 * var(--standard-margin));
+    flex-basis: calc((100% - 3 * var(--standard-margin)) / 3);
   }
 }
 
@@ -42,6 +42,9 @@
 .projects-content {
   padding: 20px 24px;
   border: var(--border-style);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .projects-thumb {
@@ -61,11 +64,14 @@
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform var(--standard-duration) var(--timing-function);
-  overflow-y: scroll;
 
   .projects-link:hover &,
   .projects-link:focus & {
     transform: translateY(0);
+  }
+  @media screen and (max-width: 479px) {
+    padding: 40px 24px;
+    overflow-y: scroll;
   }
 }
 
