@@ -1,22 +1,15 @@
 .header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
+  border-bottom: var(--border-style);
 }
 
 .header__logo {
-  margin-left: 15px;
+  margin-left: 0;
 }
 
 .header__span--dark {
   color: #000000;
 }
 
-.menu-btn {
-  display: inline-flex;
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
+.no-scroll {
+  overflow: hidden;
 }

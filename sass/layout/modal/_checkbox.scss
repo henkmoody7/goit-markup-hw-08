@@ -3,12 +3,16 @@
   display: block;
   padding-left: 30px;
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.3;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox-icon {

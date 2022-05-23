@@ -1,0 +1,25 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
+  margin: -10px;
+  @media screen and (min-width: 480px) {
+    flex-wrap: nowrap;
+    margin: -20px;
+  }
+}
+
+.social__item {
+  margin: 10px;
+  @media screen and (min-width: 480px) {
+    margin: 20px;
+  }
+}
+
+.social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
