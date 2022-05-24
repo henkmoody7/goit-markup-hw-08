@@ -11,6 +11,7 @@
 .projects-item {
   margin: calc(var(--standard-margin) / 2);
   @media screen and (min-width: 768px) {
+    display: flex;
     flex-basis: calc((100% - 2 * var(--standard-margin)) / 2);
   }
   @media screen and (min-width: 1200px) {
@@ -19,9 +20,9 @@
 }
 
 .projects-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   transition: box-shadow var(--standard-duration) var(--timing-function);
-
   &:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
@@ -42,9 +43,11 @@
 .projects-content {
   padding: 20px 24px;
   border: var(--border-style);
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 }
 
 .projects-thumb {

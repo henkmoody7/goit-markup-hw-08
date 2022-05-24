@@ -813,6 +813,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .projects-item {
+    display: flex;
     flex-basis: calc((100% - 2 * var(--standard-margin)) / 2);
   }
 }
@@ -823,7 +824,8 @@ button {
 }
 
 .projects-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   transition: box-shadow var(--standard-duration) var(--timing-function);
 }
 .projects-link:hover {
@@ -847,9 +849,13 @@ button {
 .projects-content {
   padding: 20px 24px;
   border: var(--border-style);
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+}
+@media screen and (min-width: 768px) {
+  .projects-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 }
 
 .projects-thumb {
