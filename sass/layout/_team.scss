@@ -2,8 +2,8 @@
   background-color: #f5f4fa;
 }
 .team__list {
-  margin: -15px;
   @media screen and (min-width: 768px) {
+    margin: -15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -11,15 +11,20 @@
 }
 .team__item {
   background-color: var(--secondary-color);
-  flex-basis: calc(100% / 4 - 4 * var(--standard-margin));
-  margin: 15px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: var(--shadow);
+  @media screen and (max-width: 767px) {
+    & + & {
+      margin-top: 30px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
+    margin: 15px;
     flex-basis: calc(100% / 2 - 30px);
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 4 - 4 * var(--standard-margin));
+    flex-basis: calc(100% / 4 - var(--standard-margin));
   }
 }
 

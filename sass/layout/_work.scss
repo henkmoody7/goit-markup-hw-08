@@ -14,8 +14,7 @@
 
 .work__item {
   position: relative;
-
-  flex-basis: calc(100% / 3 - 3 * var(--standard-margin));
+  flex-basis: calc(100% - 3 * var(--standard-margin) / 3);
   margin: calc(var(--standard-margin) / 2);
 }
 

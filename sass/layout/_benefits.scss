@@ -25,7 +25,11 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--tittle-color);
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
+
 .benefits__text {
   max-width: 450px;
   font-size: 14px;

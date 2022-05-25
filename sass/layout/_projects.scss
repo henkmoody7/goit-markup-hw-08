@@ -1,6 +1,6 @@
 .projects-list {
-  margin: calc(-1 * var(--standard-margin) / 2);
   @media screen and (min-width: 768px) {
+    margin: calc(-1 * var(--standard-margin) / 2);
     display: flex;
     flex-wrap: wrap;
   }
@@ -9,8 +9,13 @@
   }
 }
 .projects-item {
-  margin: calc(var(--standard-margin) / 2);
+  @media screen and (max-width: 767px) {
+    & + & {
+      margin-top: 30px;
+    }
+  }
   @media screen and (min-width: 768px) {
+    margin: calc(var(--standard-margin) / 2);
     display: flex;
     flex-basis: calc((100% - 2 * var(--standard-margin)) / 2);
   }
